@@ -23,7 +23,7 @@ docker run --rm -v <BUILD_DIRECTORY>:/target vkbasalt:latest
 
 ## Usage:
 ```
-vkbasalt.*-x86_64.AppImage <program>
+vkBasalt.*-x86_64.AppImage <program>
 ```
 
 ## Default parameters:
