@@ -36,8 +36,8 @@ check_vkbasalt_cfg() {
         [[ -f "$VKBASALT_CONFIG_FILE" && -d "$RESHADE_DIR" \
         && ! -n "$(grep -wo "$RESHADE_DIR" "$VKBASALT_CONFIG_FILE" 2>/dev/null)" ]]
         then
-            echo -e "reshadeTexturePath = $RESHADE_DIR/textures" > "$VKBASALT_CONFIG_FILE"
-            echo -e "reshadeIncludePath = $RESHADE_DIR/shaders" >> "$VKBASALT_CONFIG_FILE"
+            echo "reshadeTexturePath = $RESHADE_DIR/textures" > "$VKBASALT_CONFIG_FILE"
+            echo "reshadeIncludePath = $RESHADE_DIR/shaders" >> "$VKBASALT_CONFIG_FILE"
             (while read RES_NAME <&3 && read RES_FLPTH <&4
                 do
                     echo "$RES_NAME = $RES_FLPTH"
