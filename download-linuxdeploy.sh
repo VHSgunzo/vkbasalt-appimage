@@ -14,4 +14,4 @@ else
   printf "Your architecture %s doesn't exist for linuxdeploy." "$ARCH"
   exit 1
 fi
-sed 's|AI\x02|\x00\x00\x00|g' -i linuxdeploy.AppImage
+sed 's|AI\x02|\x00\x00\x00|' -i linuxdeploy.AppImage
